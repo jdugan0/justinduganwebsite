@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is justin dugan.</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        /* Parallax background applied to body */
+        body {
+            background-image: url('map-optimization.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .contentLeft {
+            padding: 20px;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(0, 0, 0, 0.7); 
+            display: inline-block; 
+        }
+
+
+        .contentRight {
+            padding: 20px;
+            color: rgba(255, 255, 255, 1);
+            background-color: rgba(0, 0, 0, 0.7); 
+            float: right;
+            display: inline-block; 
+            /* margin: 200px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contentLeft">
+        <p>Hello. I am Justin Dugan. Welcome to my page.</p>
+    </div>
+
+    <div class="contentRight">
+        <p>This background is a Voronoi Diagram ran through a Monte-Carlo Markov Chain optimizer!</p>
+        <p>It is trying to circlify the polygons.</p>
+        <a href="https://github.com/jdugan0/Map-Optimization" target="_blank">click here for code!</a>
+    </div>
+</body>
+
 </html>
