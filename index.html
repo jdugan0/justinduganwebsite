@@ -2,10 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6RSFNC1LY8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6RSFNC1LY8');
+    </script>
+    <meta charset="us-ascii">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Justin Dugan's Page</title>
-    <style>
+
+    <title>this is Justin Dugan</title>
+    <style type="text/css">
         /* Basic Reset */
         * {
             margin: 0;
@@ -40,9 +50,10 @@
             margin-bottom: 20px;
             width: 90%;
             max-width: 600px;
+            border-radius: 8px;
         }
 
-        /* Grid layout for 3 columns */
+        /* Grid layout for max of 3 columns */
         .content-wrapper {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -93,28 +104,63 @@
         .content-box img {
             max-width: 100%;
             height: auto;
-            /* Maintains the aspect ratio */
             border-radius: 8px;
-            /* Optional: matches the rounded corners of the box */
         }
     </style>
 </head>
 
-<body>
-    <!-- Header Section -->
+<body><!-- Header Section -->
     <div class="contentCenter">
         <h2>Hello, I am Justin Dugan. Welcome to my page.</h2>
     </div>
+    <!-- Content Wrapper for boxes -->
 
-    <!-- Content Wrapper for Left and Right Sections -->
     <div class="content-wrapper">
         <div class="content-box">
             <h3><a href="https://team1640.com/wiki/index.php/FRC_Team_1640" target="_blank">I am on a robotics team!</a>
             </h3>
-            <p>I've written code for odometry, machine learning, and swerve drive algorithms.</p>
-            <a href="https://github.com/FRC1640/2024-Code" target="_blank">Click here for code!</a>
-            <br><br>
-            <img src="Robot.jpg" alt="Robot!" style="width: 100%; border-radius: 8px;">
+
+            <p>My robotics team is an FRC robotics team, where a group of students design, build, and code a robot in
+                very small time constraints to compete in a game. As lead programmer for my team I&#39;ve written code
+                for odometry, machine learning, and swerve drive algorithms. We&#39;ve recently won our district
+                championship, and my code won the autonomous award at the world championship.</p>
+            <a href="https://github.com/FRC1640/2024-Code" target="_blank">Click here for code!</a><br />
+            <br />
+            <img alt="Robot!" src="Robot.jpg" style="width: 100%; border-radius: 8px;" />
+        </div>
+
+        <div class="content-box">
+            <h3>I&#39;ve led the design and code for multiple game jams!</h3>
+            A game jam is a competition in which one must make a video game in an extremely short amount of time, either
+            solo or as a team. I work in a team of 4. I have participated in 48, 72, and 96 hour jams. Placed top 10% in
+            most recent game jam. <a href="https://github.com/jdugan0/GMTK2024" target="_blank">Click here for
+                code.</a><br />
+            <a href="https://jugan0.itch.io/" target="_blank">Click here for game downloads!</a><br />
+            <a href="https://github.com/jdugan0/GodotTools" target="_blank">Tools for game development in Godot</a>
+        </div>
+
+        <div class="content-box">
+            <h3>I&#39;ve built a custom breadboard computer!</h3>
+
+            <p>It is using the 6502 microprocessor. I&#39;ve implemented RAM, a character LCD, I/O, and interrupts. I am
+                following <a href="https://eater.net/6502" target="_blank">Ben Eater&#39;s design</a>, with some
+                modifications to hardware (for example improved interrupt hardware) and custom assembly software.
+                Currently, it is running code that computes the fibonacci sequence.</p>
+            <br />
+            <img alt="6502 Breadboard Computer" src="6502Computer.jpg" />
+        </div>
+
+        <div class="content-box">
+            <h3>I&#39;ve made a custom speaker!</h3>
+
+            <p>The speaker was built entirely from scratch, following no guides and with no external resources. All
+                materials were things I found around the house. For example, the copper coil for the electromagnet was
+                taken from an electric toothbrush. I am proud of this project for being able to constantly improve on
+                previous iterations of the design, not for its technical difficulty.<br />
+                <br />
+                <img alt="Original speaker design" src="OriginalSpeaker.jpg" width="48%" /> <img
+                    alt="New speaker design" src="NewSpeaker.jpg" width="48%" />
+            </p>
         </div>
 
         <div class="content-box">
@@ -127,38 +173,16 @@
         </div>
 
         <div class="content-box">
-            <h3>I've led the design and code for multiple game jams!</h3>
-            Placed top 10% in most recent game. <a href="https://github.com/jdugan0/GMTK2024" target="_blank">Click here
-                for code.</a>
-            <br>
-            <a href="https://jugan0.itch.io/" target="_blank">Click here for game downloads!</a>
-            <br>
-            <a href="https://github.com/jdugan0/GodotTools" target="_blank">Tools for game development in Godot</a>
-        </div>
-        <div class="content-box">
-            <h3>I've built a custom breadboard computer!</h3>
-            <p>It is using the 6502 microprocessor. I've implemented RAM, a character LCD, I/O, and interrupts. I am
-                following
-                <a href="https://eater.net/6502" target="_blank">Ben Eater's design</a>,
-                with some modifications to hardware (for example improved interrupt hardware) and custom assembly
-                software.
-            </p>
-            <br>
-            <img src="6502Computer.jpg" alt="6502 Breadboard Computer">
-        </div>
-        <div class="content-box">
-            <h3>I've made a custom speaker!</h3>
-            <p>The speaker was built entirely from scratch, following no guides and with no external resources.
-                All materials were things I found around the house. For example, the copper coil for the electromagnet
-                was taken from an
-                electric toothbrush. I am not proud of this project for its technical challenge, but for being able to
-                constantly improve
-                on previous iterations of the design.
-                <br>
-                <img src="OriginalSpeaker.jpg" alt="Original speaker design" width=48%>
-                <img src="NewSpeaker.jpg" alt="New speaker design" width=48%>               
-            </p>
+            <h2><a href="JustinDugan_Resume.pdf" target="_blank">Click here for my resume.</a></h2>
+            &nbsp;
 
+            <h2><a href="https://github.com/jdugan0/justinduganwebsite" target="_blank">Click here for the code for this
+                    website.</a></h2>
+            &nbsp;
+
+            <h2><a href="https://github.com/jdugan0" target="_blank">Click here for my github.</a></h2>
+
+            <p>This page uses Google Analytics.</p>
         </div>
     </div>
 </body>
